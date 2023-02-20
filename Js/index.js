@@ -4,15 +4,6 @@ const links = document.querySelectorAll(".nav-item a");
 const activeNav = document.querySelector(".active-nav");
 
 
-// addEventListener("scroll", function () {
-//   var menu = document.querySelector("nav");
-//   if (scrollY >= 100) {
-//     menu.classList.add("fixed-top");
-//   } else {
-//     menu.classList.remove("fixed-top");
-//   }
-// });
-
 links.forEach((link) => {
   link.addEventListener("click", () => {
     const state = Flip.getState(activeNav);
