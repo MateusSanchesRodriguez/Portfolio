@@ -23,7 +23,4 @@
 <p>Meu portfólio. Aplicação criada para mostrar os projetos que ja desenvolvi e estou desenvolvendo na minha carreira.</p>
 
 <h2>:dollar: Licença</h2>
-<b>Proibida a utilização dos arquivos para fins diferentes de aprendizado.
-<p> teste</p>
-
-</b>
+<b>Proibida a utilização dos arquivos para fins diferentes de aprendizado.</b>
