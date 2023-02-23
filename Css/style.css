@@ -33,11 +33,6 @@ span {
   color: var(--font-color);
 }
 
-/* #start {
-  display: flex;
-  justify-content: flex-start;
-} */
-
 .start {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -117,19 +112,18 @@ span {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: center;
   grid-area: containerAboutMe;
   color: white;
 }
 
 .aboutMe {
-  font-size: 23px;
+  font-size: 24px;
   width: 40rem;
-  /* text-indent: 2rem; */
 }
 
 .aboutMe p {
-  width: 900px;
+  width: 1150px;
+  text-align: justify;
 }
 
 .mainAboutMe {
@@ -203,18 +197,23 @@ span {
   align-items: center;
   background: var(--font-color);
   grid-column: span 3;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 4rem;
   box-shadow: 0.7rem 0.6rem 0rem white;
   gap: 2rem;
+  color: black;
 }
 
-.project p {
+.project .imgProject,
+.project p,
+.project .links {
   line-height: 2rem;
   display: none;
 }
 
-.project.active p {
+.project.active .imgProject,
+.project.active p,
+.project.active .links {
   display: block;
 }
 
@@ -227,6 +226,15 @@ span {
 
 .project.is-inactive {
   grid-column: span 2;
+}
+
+.project.active .links {
+  display: flex;
+  gap: 10rem;
+}
+
+.project.active .links img {
+  width: 55px;
 }
 
 .footer {
