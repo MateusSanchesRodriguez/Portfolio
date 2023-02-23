@@ -79,7 +79,7 @@ span {
   padding-top: 15rem;
   padding-left: 23rem;
   color: whitesmoke;
-  font-size: 23px;
+  font-size: 24px;
   grid-area: descricao;
 }
 
@@ -109,9 +109,6 @@ span {
 
 .containerAboutMe {
   padding-top: 15rem;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   grid-area: containerAboutMe;
   color: white;
 }
@@ -166,9 +163,10 @@ span {
 }
 
 .mainSectionPorject {
-  max-width: auto;
+  max-width: 100rem;
   max-height: auto;
-  margin-right: 0;
+  padding-left: 37rem;
+
 }
 
 .sectionProjects {
@@ -176,8 +174,8 @@ span {
   color: white;
   grid-template-columns: repeat(6, 1fr);
   gap: 3rem;
-  padding: 2.5rem 30rem;
-  margin-right: 0;
+  width: 84rem;
+  padding: 2.5rem;
 }
 
 .projectMain {
@@ -224,9 +222,9 @@ span {
   height: auto;
 }
 
-.project.is-inactive {
+/* .project.is-inactive {
   grid-column: span 2;
-}
+} */
 
 .project.active .links {
   display: flex;
@@ -279,5 +277,39 @@ span {
   }
   50% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1920px) {
+  .descricao {
+    padding-left: 10rem;
+    width: auto;
+  }
+  .redesSociais {
+    padding-left: 10rem;
+  }
+
+  .containerAboutMe {
+    padding-right: 10rem;
+  }
+
+  .aboutMe p {
+    width: 900px;
+  }
+
+  .mainSectionPorject {
+    max-width: 100rem;
+    padding-left: 8rem;
+  }
+
+  .sectionProjects {
+    padding: 4rem 10rem 4rem 10rem;
+    justify-content: center;
+    width: 100rem;
+  }
+}
+
+@media (min-width: 780px) {
+  .start {
   }
 }
