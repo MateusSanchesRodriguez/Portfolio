@@ -166,7 +166,7 @@ span {
   max-width: 100rem;
   max-height: auto;
   padding-left: 37rem;
-
+  
 }
 
 .sectionProjects {
@@ -309,7 +309,43 @@ span {
   }
 }
 
-@media (min-width: 780px) {
-  .start {
+@media (max-width: 1440px) {
+  .descricao {
+    padding-left: 5rem;
+    width: 780px;
+  }
+  .redesSociais {
+    padding-left: 5rem;
+  }
+
+  .containerAboutMe {
+    padding-right: 0rem;
+  }
+
+  .aboutMe p {
+    width: 800px;
+  }
+
+  .projectMain {
+    padding-left: 2rem;
+  }
+
+  .mainSectionPorject {
+    max-width: 0rem;
+    padding-left: 0rem;
+  }
+
+  .sectionProjects {
+    width: 90rem;
+  }
+
+  .footer {
+    width: 100rem;
+  }
+}
+
+@media(max-width: 768px){
+  .projectMain {
+    padding-left: 50rem;
   }
 }
