@@ -280,6 +280,7 @@ span {
   }
 }
 
+
 @media (max-width: 1920px) {
   .descricao {
     padding-left: 10rem;
@@ -290,7 +291,7 @@ span {
   }
 
   .containerAboutMe {
-    padding-right: 10rem;
+    padding-right: 5rem;
   }
 
   .aboutMe p {
@@ -298,8 +299,7 @@ span {
   }
 
   .mainSectionPorject {
-    max-width: 100rem;
-    padding-left: 8rem;
+    padding-left: 10rem;
   }
 
   .sectionProjects {
@@ -310,9 +310,11 @@ span {
 }
 
 @media (max-width: 1440px) {
+  body{
+    width: fit-content; 
+  }
   .descricao {
     padding-left: 5rem;
-    width: 780px;
   }
   .redesSociais {
     padding-left: 5rem;
@@ -323,7 +325,7 @@ span {
   }
 
   .aboutMe p {
-    width: 800px;
+    width: 700px;
   }
 
   .projectMain {
@@ -338,14 +340,73 @@ span {
   .sectionProjects {
     width: 90rem;
   }
+}
 
-  .footer {
-    width: 100rem;
+@media (max-width: 1366px) {
+  .projectMain {
+    padding-top: 10rem;
+    padding-left: 6rem;
+  }
+
+  .mainSectionPorject {
+    padding-left: 2.5rem;
+  }
+
+  .sectionProjects {
+    width: 85rem;
+  }
+  .footer{
+    width: 89rem;
   }
 }
 
-@media(max-width: 768px){
+@media (max-width: 1024px) {
+
+  .descricao{
+    width: 40rem;
+  }
+  .containerAboutMe{
+    padding-left: 4rem;
+  }
+
+  .aboutMe p{
+    width: 750px;
+  }
+  .projectMain {
+    padding-top: 10rem;
+    padding-left: 27rem;
+  }
+
+  .mainSectionPorject {
+    padding-left: 4rem;
+  }
+
+  .sectionProjects {
+    width: 82.5rem;
+  }
+
+  .footer{
+    width: 94rem;
+  }
+
+}
+
+@media (max-width: 768px) {
   .projectMain {
     padding-left: 50rem;
   }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerContact {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:425px){
+
 }
