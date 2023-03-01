@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --bg-color: #000000;
   --font-color: #b293f9;
@@ -39,22 +40,23 @@ span {
   grid-template-areas: "presentation containerAboutMe";
   flex: 1 0 auto;
   padding-bottom: 10rem;
+  width: fit-content;
 }
 
-.nav-links {
+.navLinks {
   display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
 
-.nav-links a {
+.navLinks a {
   color: var(--font-color);
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-item {
+.navItem {
   position: relative;
 }
 
@@ -69,7 +71,6 @@ span {
 }
 
 .presentation {
-  max-width: 741px;
   color: white;
   grid-area: presentation;
 }
@@ -108,6 +109,7 @@ span {
 }
 
 .containerAboutMe {
+  width: fit-content;
   padding-top: 15rem;
   grid-area: containerAboutMe;
   color: white;
@@ -115,11 +117,10 @@ span {
 
 .aboutMe {
   font-size: 24px;
-  width: 40rem;
 }
 
 .aboutMe p {
-  width: 1150px;
+  width: 1250px;
   text-align: justify;
 }
 
@@ -163,10 +164,7 @@ span {
 }
 
 .mainSectionPorject {
-  max-width: 100rem;
-  max-height: auto;
   padding-left: 37rem;
-  
 }
 
 .sectionProjects {
@@ -222,10 +220,6 @@ span {
   height: auto;
 }
 
-/* .project.is-inactive {
-  grid-column: span 2;
-} */
-
 .project.active .links {
   display: flex;
   gap: 10rem;
@@ -236,12 +230,12 @@ span {
 }
 
 .footer {
-  width: 100%;
+  width: 2560px;
   border-top: 2px solid #272727;
   background-color: #151515;
 }
 
-.footer-conteiner {
+.footerContainer {
   max-width: 1000px;
   padding-top: 0.5rem;
   margin: 0 auto;
@@ -279,7 +273,6 @@ span {
     opacity: 1;
   }
 }
-
 
 @media (max-width: 1920px) {
   .descricao {
