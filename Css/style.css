@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
-
 
 :root {
   --bg-color: #000000;
@@ -15,17 +15,35 @@ body {
   background-color: var(--bg-color);
 }
 
-nav {
+#mainNav {
   background-color: #151515;
   border-bottom: 2px solid #2f2e2e;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: var(--font-color);
+}
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: var(--font-color);
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: var(--font-color);
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: var(--font-color);
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
 }
 
 a,
@@ -40,23 +58,22 @@ span {
   grid-template-areas: "presentation containerAboutMe";
   flex: 1 0 auto;
   padding-bottom: 10rem;
-  width: fit-content;
 }
 
-.navLinks {
+.nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
 
-.navLinks a {
+.nav-links a {
   color: var(--font-color);
   text-decoration: none;
   font-weight: bold;
 }
 
-.navItem {
+.nav-item {
   position: relative;
 }
 
@@ -71,6 +88,7 @@ span {
 }
 
 .presentation {
+  max-width: 741px;
   color: white;
   grid-area: presentation;
 }
@@ -109,7 +127,6 @@ span {
 }
 
 .containerAboutMe {
-  width: fit-content;
   padding-top: 15rem;
   grid-area: containerAboutMe;
   color: white;
@@ -117,10 +134,11 @@ span {
 
 .aboutMe {
   font-size: 24px;
+  width: 40rem;
 }
 
 .aboutMe p {
-  width: 1250px;
+  width: 1150px;
   text-align: justify;
 }
 
@@ -164,16 +182,18 @@ span {
 }
 
 .mainSectionPorject {
-  padding-left: 37rem;
+  max-width: 80%;
+  max-height: auto;
+  padding: 2% 2% 2% 2%;
 }
 
 .sectionProjects {
   display: grid;
   color: white;
   grid-template-columns: repeat(6, 1fr);
-  gap: 3rem;
-  width: 84rem;
+  grid-gap: 3rem;
   padding: 2.5rem;
+  padding-left: 35rem;
 }
 
 .projectMain {
@@ -220,6 +240,10 @@ span {
   height: auto;
 }
 
+.project.is-inactive {
+  grid-column: span 3;
+}
+
 .project.active .links {
   display: flex;
   gap: 10rem;
@@ -230,12 +254,12 @@ span {
 }
 
 .footer {
-  width: 2560px;
+  width: 100%;
   border-top: 2px solid #272727;
   background-color: #151515;
 }
 
-.footerContainer {
+.footer-conteiner {
   max-width: 1000px;
   padding-top: 0.5rem;
   margin: 0 auto;
@@ -284,7 +308,7 @@ span {
   }
 
   .containerAboutMe {
-    padding-right: 5rem;
+    padding-right: 10rem;
   }
 
   .aboutMe p {
@@ -292,7 +316,7 @@ span {
   }
 
   .mainSectionPorject {
-    padding-left: 10rem;
+    max-width: none;
   }
 
   .sectionProjects {
@@ -303,103 +327,120 @@ span {
 }
 
 @media (max-width: 1440px) {
-  body{
-    width: fit-content; 
+  #mainNav {
+    font-size: 1.2rem;
   }
+
+  .descricao {
+    padding-left: 6rem;
+  }
+
+  .redesSociais {
+    padding-left: 6rem;
+  }
+
+  .aboutMe p {
+    font-size: 1.5rem;
+    width: 770px;
+  }
+
+  .footer {
+    width: 90.5rem;
+  }
+}
+
+@media (max-width: 1399px) {
+  .descricao {
+    padding-left: 6rem;
+  }
+
+  .redesSociais {
+    padding-left: 6rem;
+  }
+
+  .containerAboutMe {
+    padding-right: 10rem;
+  }
+
+  .aboutMe p {
+    font-size: 1.5rem;
+    width: 800px;
+  }
+
+  .projectMain {
+    padding-left: 4rem;
+  }
+
+  .sectionProjects {
+    padding: 2rem 5rem 2rem 10rem;
+    width: 75rem;
+  }
+
+  .footer {
+    width: 90.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
   .descricao {
     padding-left: 5rem;
+    width: 35rem;
   }
   .redesSociais {
     padding-left: 5rem;
   }
 
-  .containerAboutMe {
-    padding-right: 0rem;
-  }
-
   .aboutMe p {
-    width: 700px;
+    width: 850px;
   }
 
   .projectMain {
-    padding-left: 2rem;
+    padding-left: 23rem;
+    justify-content: center;
   }
 
   .mainSectionPorject {
-    max-width: 0rem;
-    padding-left: 0rem;
+    width: 80rem;
+    padding-left: 10rem;
   }
 
   .sectionProjects {
-    width: 90rem;
+    justify-content: center;
+    padding: 2rem 0rem 2rem 0rem;
   }
-}
-
-@media (max-width: 1366px) {
-  .projectMain {
-    padding-top: 10rem;
-    padding-left: 6rem;
-  }
-
-  .mainSectionPorject {
-    padding-left: 2.5rem;
-  }
-
-  .sectionProjects {
-    width: 85rem;
-  }
-  .footer{
-    width: 89rem;
-  }
-}
-
-@media (max-width: 1024px) {
-
-  .descricao{
-    width: 40rem;
-  }
-  .containerAboutMe{
-    padding-left: 4rem;
-  }
-
-  .aboutMe p{
-    width: 750px;
-  }
-  .projectMain {
-    padding-top: 10rem;
-    padding-left: 27rem;
-  }
-
-  .mainSectionPorject {
-    padding-left: 4rem;
-  }
-
-  .sectionProjects {
-    width: 82.5rem;
-  }
-
-  .footer{
-    width: 94rem;
-  }
-
 }
 
 @media (max-width: 768px) {
-  .projectMain {
-    padding-left: 50rem;
+
+  #mainNav{
+    font-size: 1.5rem;
   }
 
-  .footerContainer {
-    display: flex;
-    flex-direction: column;
+  .descricao {
+    font-size: 2rem;
+  }
+  .redesSociais {
+    font-size: 2rem;
   }
 
-  .footerContact {
-    text-align: center;
-    padding-bottom: 2rem;
+  .containerAboutMe {
+    font-size: 2rem;
   }
-}
 
-@media (max-width:425px){
+  .aboutMe p {
+    font-size: 2rem;
+  }
 
+  .projectMain h3 {
+    font-size: 2rem;
+    padding-left: 16rem;
+  }
+
+  .mainSectionPorject {
+    font-size: 2rem;
+  }
+
+  .sectionProjects {
+    font-size: 2rem;
+  }
 }
