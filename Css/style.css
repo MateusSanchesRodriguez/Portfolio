@@ -364,6 +364,10 @@ span {
 }
 
 @media (max-width: 1366px) {
+  #mainNav {
+    width: 1366px;
+  }
+
   .descricao {
     padding-left: 6rem;
   }
@@ -378,7 +382,11 @@ span {
 
   .aboutMe p {
     font-size: 1.5rem;
-    width: 800px;
+    width: 700px;
+  }
+
+  .mainSectionPorject {
+    width: 100%;
   }
 
   .projectMain {
@@ -391,11 +399,15 @@ span {
   }
 
   .footer {
-    width: 90.5rem;
+    width: 1366px;
   }
 }
 
 @media (max-width: 1024px) {
+  #mainNav {
+    width: 100%;
+  }
+
   .descricao {
     padding-left: 5rem;
     width: 35rem;
@@ -405,7 +417,7 @@ span {
   }
 
   .aboutMe p {
-    width: 850px;
+    width: 750px;
   }
 
   .projectMain {
@@ -422,6 +434,10 @@ span {
     justify-content: center;
     padding: 2rem 0rem 2rem 0rem;
   }
+  .footer {
+    width: 88rem;
+  }
+
 }
 
 @media (max-width: 768px) {
