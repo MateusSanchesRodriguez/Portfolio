@@ -29,7 +29,6 @@
     ></script>
     <script src="./Js/html2canvas.min.js" defer></script>
     <script src="./Js/disintegrate.js" defer></script>
-    <script src="./Js/dontOpen.js" defer></script>
     <script src="./Js/maquina_escrever.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
@@ -49,7 +48,6 @@
     <div class="mainContainer">
       <div
         class="mainContent"
-        id="home"
         data-dis-type="simultaneous"
         data-dis-reduction-factor="200"
       >
@@ -59,7 +57,7 @@
         >
           <div class="container-fluid justify-content-end">
             <button
-              class="navbar-toggler text-uppercase font-weight-bold text-white rounded "
+              class="navbar-toggler text-uppercase font-weight-bold text-white rounded"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarResponsive"
@@ -89,11 +87,11 @@
         <!-- menu -->
 
         <!-- sobre mim -->
-        <section class="start">
+        <section class="start" id="home">
           <div class="presentation">
             <p class="descricao">
               Oi, eu sou <br />
-              <span style="display: inline" class="myName">Mateus Sanches</span>
+              <span style="display: inline" class="myName">Mateus Sanches Rodriguez</span>
               <br />
 
               Desenvolvedor Back-End
@@ -133,18 +131,23 @@
                 feito em Node para integrar dentro do ERP a criação de boletos
                 referente a Borderôs com QRcode bancário.
                 <br />
-                Enquanto estudo tento me tornar a pessoa com o qual eu gostaria
-                de ser, que quando o time estiver tendo algum problema eles
-                possam contar comigo para solucionar. Atualmente estou focando
-                nas tecnologias do mercado para uma nova oportunidade.
+                <br />
+                Estou sempre me atualizando sobre as últimas tendências e
+                ferramentas do mercado para melhorar minhas habilidades. Sou uma
+                pessoa determinada e comprometida em alcançar meus objetivos.
+                Estou procurando por uma oportunidade desafiadora em uma empresa
+                que valorize minha experiência e conhecimento e me permita
+                crescer profissionalmente.
+                <br />
+                <br />
               </p>
               <p>
-                Hoje já entendo tecnologias como Python, Node, Mysql, HTML, CSS,
-                JavaScript, Bootstrap, Git.
+                Hoje já entendo tecnologias como Python, FastAPI, Flask, Node,
+                Mysql, HTML, CSS, JavaScript, Bootstrap, Git.
               </p>
             </div>
             <div class="buttonResume">
-              <a href="Arquivos/Curriculo-Mateus.pdf" download>
+              <a href="Arquivos/Curriculo-Mateus Sanches.pdf" download>
                 <div class="buttonResumeEstilo">
                   <img src="Arquivos/nuvem.png" alt="" />
                   <p>Currículo</p>
@@ -156,111 +159,185 @@
         </section>
 
         <!-- Projetos -->
-        <div class="projectMain" id="projects">
-          <h3 class="h3Projects">PROJETOS</h3>
-        </div>
-        <div class="mainSectionPorject row justify-content-center">
-          <section class="sectionProjects">
-            <div class="project">
-              <h1>Calculadora JS</h1>
-              <p>
-                Projeto feito com base em um desafio do curso da OneBitCode,
-                sendo ele desenvolver uma calculadora que consegue fazer as
-                quarto operacoes (+, -, *, /) e tambem calcular resto
-              </p>
-              <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
-              <div class="links">
-                <div class="siteLinks">
-                  <a
-                    href="https://mateussanchesrodriguez.github.io/Calculadora-Basica-JS/"
-                    target="_blank"
-                  >
-                    <img
-                      src="Arquivos/web-browser.png"
-                      alt="site do projeto"
-                      class="siteLinks"
-                    />
-                  </a>
-                </div>
-                <div class="githubLinks">
-                  <a
-                    href="https://github.com/MateusSanchesRodriguez/Calculadora-Basica-JS"
-                    target="_blank"
-                  >
-                    <img
-                      src="Arquivos/github_black.png"
-                      alt="github"
-                      class="githubLinks"
-                    />
-                  </a>
+        <section id="projects">
+          <div class="projectMain">
+            <h3 class="h3Projects">PROJETOS</h3>
+          </div>
+          <div class="mainSectionPorject row justify-content-center">
+            <section class="sectionProjects">
+              <div class="project">
+                <h1>Gerador de Senha</h1>
+                <p>
+                  Este projeto consiste em um gerador de senhas aleatórias de
+                  até 30 caracteres, usando a biblioteca Qt Design (PyQt5) para
+                  criar a interface gráfica do usuário. Além disso, uma API REST
+                  foi criada para retornar senhas aleatórias contendo caracteres
+                  maiúsculos, minúsculos, números e caracteres especiais.
+                  <br />
+                  <br />
+                  <img
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYThkYjI1ZDcxNDFhNGQzZjhmNDNiYzlhYjA1NTQwZjAxYWUwODU2NyZjdD1n/iEE6S2s2QHUAPti3hf/giphy.gif"
+                  />
+                </p>
+                <p>Tecnologias usadas no projeto: FastAPI,Python,Qt Design.</p>
+                <div class="links">
+                  <div class="siteLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Gerador-de-Senha/releases/download/Latest/Gerador.de.Senha.zip"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/download-da-nuvem.png"
+                        alt="site do projeto"
+                        class="siteLinks"
+                      />
+                    </a>
+                  </div>
+                  <div class="githubLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Gerador-de-Senha"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/github_black.png"
+                        alt="github"
+                        class="githubLinks"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project">
-              <h1>Jogo da Velha</h1>
-              <p>
-                Projeto feito para melhorar minhas habilidades com HTML, CSS e
-                JS, sendo parte do projeto desenvolver um jogo da velha entre
-                dois jogadores
-              </p>
-              <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
-              <div class="links">
-                <div class="siteLinks">
-                  <a
-                    href="https://mateussanchesrodriguez.github.io/Jogo-da-Velha/"
-                    target="_blank"
-                  >
-                    <img
-                      src="Arquivos/web-browser.png"
-                      alt="site do projeto"
-                      class="siteLinks"
-                    />
-                  </a>
+              <div class="project">
+                <h1>API Gerador de Senhas</h1>
+                <p>
+                  Uma API bem simples, feita para dar uma camada a mais de
+                  dificuldade para o projeto de gerador de senha. Foi criada
+                  usando FastAPI, com o único proposito de trazer a senha gerada
+                  conforme a quantidade de caracteres a pessoa quiser
+                  <br />
+                  <br />
+                  <img
+                    src="https://media.discordapp.net/attachments/862487516481060905/1097580487263932507/img.png"
+                    alt=""
+                  />
+                </p>
+                <p>Tecnologias usadas no projeto: FastAPI,Python,Qt Design.</p>
+                <div class="links">
+                  <div class="githubLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Gerador_de_senha_API"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/github_black.png"
+                        alt="github"
+                        class="githubLinks"
+                      />
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="project">
+                <h1>Calculadora JS</h1>
+                <p>
+                  Projeto feito com base em um desafio do curso da OneBitCode,
+                  sendo ele desenvolver uma calculadora que consegue fazer as
+                  quarto operacoes (+, -, *, /) e tambem calcular resto
+                </p>
+                <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
+                <div class="links">
+                  <div class="siteLinks">
+                    <a
+                      href="https://mateussanchesrodriguez.github.io/Calculadora-Basica-JS/"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/web-browser.png"
+                        alt="site do projeto"
+                        class="siteLinks"
+                      />
+                    </a>
+                  </div>
+                  <div class="githubLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Calculadora-Basica-JS"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/github_black.png"
+                        alt="github"
+                        class="githubLinks"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <h1>Jogo da Velha</h1>
+                <p>
+                  Projeto feito para melhorar minhas habilidades com HTML, CSS e
+                  JS, sendo parte do projeto desenvolver um jogo da velha entre
+                  dois jogadores
+                </p>
+                <p>Tecnologias usadas no projeto: HTML, CSS e JS.</p>
+                <div class="links">
+                  <div class="siteLinks">
+                    <a
+                      href="https://mateussanchesrodriguez.github.io/Jogo-da-Velha/"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/web-browser.png"
+                        alt="site do projeto"
+                        class="siteLinks"
+                      />
+                    </a>
+                  </div>
 
-                <div class="githubLinks">
-                  <a
-                    href="https://github.com/MateusSanchesRodriguez/Jogo-da-Velha"
-                    target="_blank"
-                  >
-                    <img
-                      src="Arquivos/github_black.png"
-                      alt="github"
-                      class="githubLinks"
-                    />
-                  </a>
+                  <div class="githubLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Jogo-da-Velha"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/github_black.png"
+                        alt="github"
+                        class="githubLinks"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project">
-              <h1>Highlighting and Auto Complete para Sage X3</h1>
-              <p>
-                Projeto feito para ter um Highlighting e um Auto Complete para o
-                ERP da Sage, era um projeto pessoal feito por um colega de
-                trabalho e eu resolvi terminá-lo e adicionar o auto complete
-              </p>
-              <p>
-                Tecnologias usadas no projeto: nenhuma em especial apenas
-                conhecimento em JSON.
-              </p>
-              <div class="links">
-                <div class="githubLinks">
-                  <a
-                    href="https://github.com/MateusSanchesRodriguez/Sagex3-Syntax-Highlight-and-Auto-Complete"
-                    target="_blank"
-                  >
-                    <img
-                      src="Arquivos/github_black.png"
-                      alt="github"
-                      class="githubLinks"
-                    />
-                  </a>
+              <div class="project">
+                <h1>Highlighting and Auto Complete para Sage X3</h1>
+                <p>
+                  Projeto feito para ter um Highlighting e um Auto Complete para
+                  o ERP da Sage, era um projeto pessoal feito por um colega de
+                  trabalho e eu resolvi terminá-lo e adicionar o auto complete
+                </p>
+                <p>
+                  Tecnologias usadas no projeto: nenhuma em especial apenas
+                  conhecimento em JSON.
+                </p>
+                <div class="links">
+                  <div class="githubLinks">
+                    <a
+                      href="https://github.com/MateusSanchesRodriguez/Sagex3-Syntax-Highlight-and-Auto-Complete"
+                      target="_blank"
+                    >
+                      <img
+                        src="Arquivos/github_black.png"
+                        alt="github"
+                        class="githubLinks"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Projetos -->
-          </section>
-        </div>
+              <!-- Projetos -->
+            </section>
+          </div>
+        </section>
 
         <footer class="footer">
           <div class="footer-conteiner">
@@ -275,15 +352,6 @@
               >
                 <span>Mateus Sanches</span>
               </a>
-            </div>
-            <div id="img" data-dis-type="simultaneous" class="icons">
-              <div class="gifFooter">
-                <img
-                  src="Arquivos/pepe-hack-hack.gif"
-                  alt="pepe"
-                  class="pepe"
-                />
-              </div>
             </div>
           </div>
         </footer>

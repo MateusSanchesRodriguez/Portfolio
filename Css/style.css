@@ -54,6 +54,7 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  border: 2px solid whitesmoke;
 }
 
 a,
@@ -213,6 +214,7 @@ span {
 }
 
 .project {
+  text-align: center;
   height: 15rem;
   border-radius: 1rem;
   cursor: pointer;
@@ -260,6 +262,10 @@ span {
 
 .project.active .links img {
   width: 55px;
+}
+
+.project.active .links .siteLinks {
+  width: 65px;
 }
 
 .footer {
@@ -434,6 +440,9 @@ span {
     justify-content: center;
     padding: 2rem 0rem 2rem 0rem;
   }
+  .footer-conteiner{
+    justify-content: center;
+  }
   .footer {
     width: 88rem;
   }
@@ -464,6 +473,10 @@ span {
     font-size: 2rem;
     padding-left: 16rem;
   }
+  
+  .project.active{
+    font-size: 2rem;
+  }
 
   .mainSectionPorject {
     font-size: 2rem;
@@ -471,5 +484,114 @@ span {
 
   .sectionProjects {
     font-size: 2rem;
+  }
+}
+
+
+ @media (max-width: 425px){
+  #mainNav {
+    font-size: 2.5rem;
+  }
+
+  .start{
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation{
+    padding-left: 15rem;
+  }
+
+  .redesSociais{
+    padding-left: 25rem;
+    width: 800px;
+  }
+
+  .descricao {
+    width: 55rem;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .descricao .myName{
+    font-size: 6rem;
+  }
+
+  .linkedin img,
+  .github img {
+    width: 70px;
+  }
+
+  .aboutMe .mainAboutMe{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+  .containerAboutMe {
+    width: 85rem;
+    padding-left: 10rem;
+  }
+
+  .aboutMe p{
+    width: 70rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .buttonResume{
+    width: 70rem;
+    padding-left: 23rem;
+  }
+
+  .buttonResumeEstilo{
+    width: 350px;
+    height: 70px;
+    font-size: 3rem;
+  }
+  .buttonResumeEstilo img{
+    width: 50px;
+  }
+  .projectMain{
+    padding-left: 10rem;
+    width: 1000px;
+  }
+  .projectMain h3 {
+    font-size: 5rem;
+  }
+
+  .project h1{
+    font-size: 3rem;
+  }
+
+  .project.active h1{
+    font-size: 5rem;
+  }
+  
+  .project.active p{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .project.active p img{
+    width: 1000px;
+  }
+
+  .project.active .links .siteLinks,.project.active .links .githubLinks {
+    width: 85px;
+  }
+  .footer-conteiner{
+    max-width: 1050px;
+    text-align: center;
+  }
+  .footerContact {
+    font-size: 2.5rem;
+  }
+} 
+
+@media (max-width: 320px){
+  .containerAboutMe{
+    padding-left: 8rem;
+  }
+  .mainSectionPorject{
+    padding-left: 4rem;
   }
 }

@@ -1,20 +1,5 @@
 gsap.registerPlugin(Flip);
 
-// const links = document.querySelectorAll(".nav-item a");
-// const activeNav = document.querySelector(".active-nav");
-
-// links.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     const state = Flip.getState(activeNav);
-
-//     link.appendChild(activeNav);
-//     Flip.from(state, {
-//       duration: 0.5,
-//       absolute: true,
-//     });
-//   });
-// });
-
 const projects = document.querySelectorAll(".project");
 
 projects.forEach((project, index) => {
@@ -47,7 +32,6 @@ projects.forEach((project, index) => {
 });
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  // Navbar shrink function
   var navbarShrink = function () {
     const navbarCollapsible = document.body.querySelector("#mainNav");
     if (!navbarCollapsible) {
@@ -60,13 +44,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   };
 
-  // Shrink the navbar
   navbarShrink();
 
-  // Shrink the navbar when page is scrolled
   document.addEventListener("scroll", navbarShrink);
 
-  // Activate Bootstrap scrollspy on the main nav element
   const mainNav = document.body.querySelector("#mainNav");
   if (mainNav) {
     new bootstrap.ScrollSpy(document.body, {
@@ -75,7 +56,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
-  // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = [].slice.call(
     document.querySelectorAll("#navbarResponsive .nav-link")
@@ -88,5 +68,30 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+if (screen.availWidth > 1024) {
+  const divPai = document.getElementsByClassName('footer-conteiner')[0]
+  const divMain = document.createElement('div')
+  const divGif = document.createElement('div')
+  const script = document.createElement("script");
+  
+  script.defer = true;
+  script.src = "Js/dontOpen.js";
+  document.head.appendChild(script);
 
-console.log("Caso voce esteja mexendo na responsividade vai precisar dar um F5 para ele mudar, esse comportamento acontece por eu utilizar o canvas")
+  divMain.setAttribute('id', 'img')
+  divMain.setAttribute('data-dis-type', 'simultaneous')
+  divMain.setAttribute('class', 'icons')
+  divPai.appendChild(divMain);
+
+  divGif.setAttribute('class', 'gifFooter')
+  divMain.appendChild(divGif)
+  divGif.innerHTML = '<img src="Arquivos/pepe-hack-hack.gif"alt="pepe"class="pepe"/>';
+}
+
+
+
+
+
+console.log(
+  "Caso voce esteja mexendo na responsividade vai precisar dar um F5 para ele mudar, esse comportamento acontece por eu utilizar o canvas"
+);

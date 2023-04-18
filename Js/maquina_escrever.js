@@ -3,7 +3,7 @@ const fName = meuNome.innerHTML;
 meuNome.innerHTML = "";
 
 let index = 0;
-const texts = [fName, "JavaScript", "Node", "SQL"];
+const texts = [fName, "Matias"];
 
 function typeWriter(string) {
   const meuNomeF = string.split("");
@@ -24,5 +24,5 @@ setInterval(() => {
   if (index >= texts.length) {
     index = 0;
   }
-}, 4000);
+}, 5000);
 
