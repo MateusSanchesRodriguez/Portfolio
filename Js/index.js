@@ -95,3 +95,5 @@ if (screen.availWidth > 1024) {
 console.log(
   "Caso voce esteja mexendo na responsividade vai precisar dar um F5 para ele mudar, esse comportamento acontece por eu utilizar o canvas"
 );
+
+
